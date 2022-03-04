@@ -13,7 +13,7 @@ client.on('ready', () => {
     client.user.setPresence({ activities: [{ name: “your feelings lol”' }], status: 'online' });
 });
 client.on('messageCreate', (message) => {
-    if(message.content.startsWith(prefix)){
+    if(message.content.toLowerCase().startsWith(prefix)){
         let liberal =[
             "fuck you",
             "smd",
